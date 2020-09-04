@@ -11,9 +11,8 @@ class Solution {
       case _ => "YES"
     }
 
-  def main(args: Array[String]): Unit = {
+  def main(args: Array[String]): Unit =
     main(io.Source.stdin.getLines().toSeq.reduce(_ + "\n" + _))
-  }
 
   def main(arg: String): Seq[String] = {
     arg.split("\n").tail.toSeq
